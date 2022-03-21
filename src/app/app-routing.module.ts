@@ -5,6 +5,7 @@ import {ContactComponent} from './contact/contact.component';
 import {MyProjectsComponent} from './my-projects/my-projects.component';
 
 const routes: Routes = [
+// dodany routing podstawowy
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'my-projects', component: MyProjectsComponent},
