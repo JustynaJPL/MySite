@@ -10,6 +10,8 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MainContentComponent } from './main-content/main-content.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +20,7 @@ import { MainContentComponent } from './main-content/main-content.component';
     MyProjectsComponent,
     NavigationComponent,
     MainContentComponent
+    
   ],
   imports: [
     BrowserModule,
