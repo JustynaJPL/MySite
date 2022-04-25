@@ -1,17 +1,46 @@
   [
     {
       "id": 1, "name": "Angular Tutorial", "category":"Angular", 
-      "description": "Project of a first project app from Angular tutorials", 
+      "shortdescription": "Project of a first project app from Angular tutorials",
+      "description": "", 
       "image": "./assets/angular_logo.png",
       "link": "https://justynajpl.github.io/AngularTutStore/", 
       "progress": "99%"
     },
     {
       "id": 2, "name": "Angular Tutorial Heroes App", "category":"Angular", 
-      "description":  "Tour the Heroes app Angular tutorial from the https://angular.io/tutorial/toh-pt1"  , 
+      "shortdescription":  "Tour the Heroes app Angular tutorial from the https://angular.io/tutorial/toh-pt1"  , 
+      "description": "", 
       "image": "./assets/angular_logo.png",
       "link": "https://github.com/JustynaJPL/tourtheheroesapp", 
       "progress": "30%"
+    },
+    {
+    	"id": 3, "name": "JudgeCookie", "category":"ytcreation", 
+      "shortdescription": "YouTube channel where movies are judged with a cookie.. :)",
+      "description": "", 
+      "image": "./assets/cookie.jpg",
+      "link": "https://www.youtube.com/channel/UC4kDgov8Aemzf63U6EL9bqw", 
+      "progress": "5%"
+
+    },
+    {
+    	"id": 4, "name": "JudgeCookie", "category":"ytcreation", 
+      "shortdescription": "YouTube channel where movies are judged by a cookie.. :)",
+      "description": "", 
+      "image": "./assets/cookie.jpg",
+      "link": "https://www.youtube.com/channel/UC4kDgov8Aemzf63U6EL9bqw", 
+      "progress": "5%"
+
+    },
+    {
+    	"id": 4, "name": "JudgeCookie", "category":"ytcreation", 
+      "shortdescription": "YouTube channel where movies are judged by a cookie.. :)",
+      "description": "", 
+      "image": "./assets/cookie.jpg",
+      "link": "https://www.youtube.com/channel/UC4kDgov8Aemzf63U6EL9bqw", 
+      "progress": "5%"
+
     }
 
     ]

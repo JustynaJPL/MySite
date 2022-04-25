@@ -1,19 +1,20 @@
-<div class="row">
-  <div class="card col-4" *ngFor="let project of projects; index as i;">
-    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-      <img src="{{project.image}}" class="img-fluid float-start" />
-      <a [href]="project.link ">
-        <div class="mask"></div>
-      </a>
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">{{project.name}}</h5>
-      <p class="card-text">
-        {{project.description}}
-      </p>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" [style.width]="project.progress" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="row justify-content-evenly">
+    <div class="card col-lg-3 col-sm-10" *ngFor="let project of projects; index as i;">
+      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+        <img src="{{project.image}}" class="img-fluid float-start" />
+        <a [href]="project.link ">
+          <div class="mask"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{project.name}}</h5>
+        <p class="card-text">
+          {{project.shortdescription}}
+        </p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" [style.width]="project.progress" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+

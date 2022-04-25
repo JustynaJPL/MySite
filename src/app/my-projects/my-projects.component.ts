@@ -17,11 +17,14 @@ export class MyProjectsComponent implements OnInit {
         id:number, 
         name:string,
         category:string,
+        shortdescription:string,
         description:string,
         image:string,
         link:string,
         progress:number
   }[] = projects;
+
+  
   
 
   constructor() { 
