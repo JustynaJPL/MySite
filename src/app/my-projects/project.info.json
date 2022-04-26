@@ -25,21 +25,30 @@
 
     },
     {
-    	"id": 4, "name": "JudgeCookie", "category":"ytcreation", 
-      "shortdescription": "YouTube channel where movies are judged by a cookie.. :)",
+    	"id": 4, "name": "Justa I Jej Wszystkie Zabawne Stany", "category":"ytcreation", 
+      "shortdescription": "YouTube channel where you can get a piece of my life",
       "description": "", 
-      "image": "./assets/cookie.jpg",
-      "link": "https://www.youtube.com/channel/UC4kDgov8Aemzf63U6EL9bqw", 
+      "image": "./assets/ytchannelmine.jpg",
+      "link": "https://www.youtube.com/channel/UC7eJQrgRAibuXamjp5RUEYw", 
       "progress": "5%"
 
     },
     {
-    	"id": 4, "name": "JudgeCookie", "category":"ytcreation", 
-      "shortdescription": "YouTube channel where movies are judged by a cookie.. :)",
+    	"id": 5, "name": "DefragmentMePlease", "category":"game", 
+      "shortdescription": "Game about defragmentation",
       "description": "", 
-      "image": "./assets/cookie.jpg",
-      "link": "https://www.youtube.com/channel/UC4kDgov8Aemzf63U6EL9bqw", 
-      "progress": "5%"
+      "image": "./assets/gamecube.jpg",
+      "link": "", 
+      "progress": "10%"
+
+    },
+    {
+    	"id": 6, "name": "ENERGY", "category":"game", 
+      "shortdescription": "Trylogy game I am developing. More info on yt",
+      "description": "", 
+      "image": "./assets/energygame.jpg",
+      "link": "", 
+      "progress": "10%"
 
     }
 
