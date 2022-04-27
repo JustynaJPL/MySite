@@ -1,55 +1,78 @@
   [
     {
-      "id": 1, "name": "Angular Tutorial", "category":"Angular", 
-      "shortdescription": "Project of a first project app from Angular tutorials",
-      "description": "", 
+      "id": 1,
+      "name": "Angular Store Tutorial",
+      "category": "Angular",
+      "shortdescription": "Pierwszy z tutoriali na stronie dokumentacji Angulara",
+      "description": "",
       "image": "./assets/angular_logo.png",
-      "link": "https://justynajpl.github.io/AngularTutStore/", 
+      "link": "https://justynajpl.github.io/AngularTutStore/",
       "progress": "99%"
     },
     {
-      "id": 2, "name": "Angular Tutorial Heroes App", "category":"Angular", 
-      "shortdescription":  "Tour the Heroes app Angular tutorial from the https://angular.io/tutorial/toh-pt1"  , 
-      "description": "", 
+      "id": 2,
+      "name": "Angular Tutorial Heroes App",
+      "category": "Angular",
+      "shortdescription": "Drugi tutorial - Aplikacja Tour the Heroes ze strony dokumentacji Angulara",
+      "description": "",
       "image": "./assets/angular_logo.png",
-      "link": "https://github.com/JustynaJPL/tourtheheroesapp", 
+      "link": "https://github.com/JustynaJPL/tourtheheroesapp",
       "progress": "30%"
     },
     {
-    	"id": 3, "name": "JudgeCookie", "category":"ytcreation", 
-      "shortdescription": "YouTube channel where movies are judged with a cookie.. :)",
-      "description": "", 
+      "id": 3,
+      "name": "Angular - Profesjonalne techniki programowania",
+      "category": "ytcreation",
+      "shortdescription": "Projekt sklepu internetowego z ksiazki Adama Freemana",
+      "description": "",
+      "image": "./assets/angular_logo.png",
+      "link": "https://www.youtube.com/channel/UC7eJQrgRAibuXamjp5RUEYw",
+      "progress": "100%"
+
+    },
+    {
+      "id": 4,
+      "name": "Kodilla - kurs",
+      "category": "Angular",
+      "shortdescription": "Projekty zrobione na kursie Front-End Kodilli",
+      "description": "",
+      "image": "./assets/kodilla-logo.png",
+      "link": "",
+      "progress": "95%"
+    },
+    
+    {
+      "id": 5,
+      "name": "JudgeCookie",
+      "category": "ytcreation",
+		"shortdescription": "Kanał na yt gdzie oceniamy współczesna sztukę gier i filmów",
+      "description": "",
       "image": "./assets/cookie.jpg",
-      "link": "https://www.youtube.com/channel/UC4kDgov8Aemzf63U6EL9bqw", 
+      "link": "https://www.youtube.com/channel/UC4kDgov8Aemzf63U6EL9bqw",
       "progress": "5%"
 
     },
     {
-    	"id": 4, "name": "Justa I Jej Wszystkie Zabawne Stany", "category":"ytcreation", 
-      "shortdescription": "YouTube channel where you can get a piece of my life",
-      "description": "", 
-      "image": "./assets/ytchannelmine.jpg",
-      "link": "https://www.youtube.com/channel/UC7eJQrgRAibuXamjp5RUEYw", 
-      "progress": "5%"
-
-    },
-    {
-    	"id": 5, "name": "DefragmentMePlease", "category":"game", 
-      "shortdescription": "Game about defragmentation",
-      "description": "", 
+      "id": 6,
+      "name": "DefragmentMePlease",
+      "category": "game",
+		"shortdescription": "Gra komputerowa",
+      "description": "",
       "image": "./assets/gamecube.jpg",
-      "link": "", 
+      "link": "",
       "progress": "10%"
 
     },
     {
-    	"id": 6, "name": "ENERGY", "category":"game", 
-      "shortdescription": "Trylogy game I am developing. More info on yt",
-      "description": "", 
+      "id": 7,
+      "name": "ENERGY",
+      "category": "game",
+      "shortdescription": "Trylogia scify - gra komputerowa",
+      "description": "",
       "image": "./assets/energygame.jpg",
-      "link": "", 
+      "link": "",
       "progress": "10%"
 
     }
 
-    ]
+  ]
