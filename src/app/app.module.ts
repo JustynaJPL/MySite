@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { ViewedComponentComponent } from './viewed-component/viewed-component.component';
 
 
 
@@ -21,7 +22,8 @@ import { MainContentComponent } from './main-content/main-content.component';
     ContactComponent,
     MyProjectsComponent,
     NavigationComponent,
-    MainContentComponent
+    MainContentComponent,
+    ViewedComponentComponent
     
   ],
   imports: [

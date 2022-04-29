@@ -1,4 +1,4 @@
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4" id="projects">
   <div class="col" *ngFor="let project of projects; index as i;">
     <div class="card h-100">
       <img src="{{project.image}}" class="card-img-top" alt="..." />
@@ -8,10 +8,10 @@
           {{project.shortdescription}}
         </p>
       </div>
-      <div class="card-footer">
+      <!-- <div class="card-footer">
         <div class="progress ">
           <div class="progress-bar" role="progressbar" [style.width]="project.progress" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
