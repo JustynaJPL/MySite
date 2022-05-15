@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import projects from "./project.info.json";
+import {Router} from '@angular/router';
 //json imported from the file to load the content
 
 
@@ -25,13 +26,25 @@ export class MyProjectsComponent implements OnInit {
   }[] = projects;
 
   
-  
+  isProjectChoosed = false;
+  whichProjchoosen = 0;
+
 
   constructor() { 
    
   }
+  ivechoosen(projId:number){
+    this.isProjectChoosed = true;
+    this.whichProjchoosen = projId;
+  }
 
   ngOnInit(): void {
+    
+  }
+
+  letsgoback(){
+    this.isProjectChoosed = false;
+    this.whichProjchoosen = 0;
   }
 
 }

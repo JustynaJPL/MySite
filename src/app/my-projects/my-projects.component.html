@@ -1,17 +1,44 @@
-<div class="row row-cols-1 row-cols-md-3 g-4" id="projects">
-  <div class="col" *ngFor="let project of projects; index as i;">
-    <div class="card h-100">
-      <img src="{{project.image}}" class="card-img-top" alt="..." />
-      <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center">
-        <h3 class="text-center fw-bold blockquote">{{project.name}}</h3>
-        <p class="fw-light text-center">
-          {{project.shortdescription}}
-        </p>
-      </div>
-      <!-- <div class="card-footer">
-        <div class="progress ">
-          <div class="progress-bar" role="progressbar" [style.width]="project.progress" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4 row-of-projects" id="projects" *ngIf="!isProjectChoosed">
+    <div class="col" *ngFor="let project of projects; index as i;">
+      <div class="card h-100">
+        <img src="{{project.image}}" class="card-img-top" alt="..." />
+        <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center">
+          <div class="<!-- h-100 --> d-flex flex-column justify-content-center align-items-center">
+            <h3 class="text-center fw-bold blockquote">{{project.name}}</h3>
+            <p class="fw-light text-center">
+              {{project.shortdescription}}
+            </p>
+          </div>
+          <div class="d-flex flex-column justify-content-end align-items-center">
+            <button type="button" class="btn btn-primary align-self-center" (click)="ivechoosen(project.id)">
+              Zobacz więcej
+            </button>
+          </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
+  <div class="row h-100" *ngIf="isProjectChoosed">
+    <div class="col-5">
+      <img src="{{projects[whichProjchoosen-1].image}}" class="projImage" />
+    </div>
+    <div class="col-7">
+      <h1>{{projects[whichProjchoosen-1].name}}</h1>
+      <p>{{projects[whichProjchoosen-1].description}}</p>
+    </div>
+    <div class="col-12">
+      <div class="progress" style="height: 20px;">
+        <div class="progress-bar" role="progressbar" attr.style="width: {{projects[whichProjchoosen-1].progress}};" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          {{projects[whichProjchoosen-1].progress}}
+        </div>
+      </div>
+    </div>
+    <div class="col-12 h-100 d-flex flex-row justify-content-evenly align-items-center">
+      <button type="button" class="btn btn-warning btn-lg" (click) = "letsgoback()"> Wróć do projektów</button>
+      <button type ="button" class="btn btn-danger btn-lg" routerLink = "/"> Powrót na stronę główna </button>
+      
+    </div>
+
+  </div>
+</div>
