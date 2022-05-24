@@ -26,6 +26,14 @@
     <div class="col-7">
       <h1>{{projects[whichProjchoosen-1].name}}</h1>
       <p>{{projects[whichProjchoosen-1].description}}</p>
+      <a href="{{projects[whichProjchoosen-1].link}}">Zobacz projekt</a>
+      <div>
+        <h2>Zadania do wykonania:</h2>
+        <p *ngIf='projects[whichProjchoosen-1].whattodo1bool'><i class="fas fa-tasks fa-2x" attr.style = "color: {{projects[whichProjchoosen-1].whattodo1issuecolor}}"></i> {{projects[whichProjchoosen-1].whattodo1}}</p>
+        <p *ngIf='projects[whichProjchoosen-1].whattodo2bool'><i class="fas fa-tasks fa-2x" attr.style = "color: {{projects[whichProjchoosen-1].whattodo2issuecolor}}"></i>{{projects[whichProjchoosen-1].whattodo2}}</p>
+        <p *ngIf='projects[whichProjchoosen-1].whattodo3bool'><i class="fas fa-tasks fa-2x" attr.style = "color: {{projects[whichProjchoosen-1].whattodo3issuecolor}}"></i>{{projects[whichProjchoosen-1].whattodo3}}</p>
+        <p *ngIf='projects[whichProjchoosen-1].whattodo4bool'><i class="fas fa-tasks fa-2x" attr.style = "color: {{projects[whichProjchoosen-1].whattodo4issuecolor}}"></i>{{projects[whichProjchoosen-1].whattodo4}}</p>
+      </div>
     </div>
     <div class="col-12">
       <div class="progress" style="height: 20px;">
@@ -33,6 +41,7 @@
           {{projects[whichProjchoosen-1].progress}}
         </div>
       </div>
+      <h2 *ngIf='projects[whichProjchoosen-1].isfin == true'>ZADANIE WYKONANE</h2>
     </div>
     <div class="col-12 h-100 d-flex flex-row justify-content-evenly align-items-center">
       <button type="button" class="btn btn-warning btn-lg" (click) = "letsgoback()"> Wróć do projektów</button>

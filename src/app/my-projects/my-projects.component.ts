@@ -22,7 +22,20 @@ export class MyProjectsComponent implements OnInit {
         description:string,
         image:string,
         link:string,
-        progress:number
+        progress:number,
+        whattodo1bool: boolean,
+        whattodo1:string,
+        whattodo1issuecolor: string,
+        whattodo2bool: boolean,
+        whattodo2: string,
+        whattodo2issuecolor: string ,
+        whattodo3bool: boolean,
+        whattodo3: string,
+        whattodo3issuecolor: string,
+        whattodo4bool: boolean,
+        whattodo4:string ,
+        whattodo4issuecolor:string,
+        isfin:boolean 
   }[] = projects;
 
   
