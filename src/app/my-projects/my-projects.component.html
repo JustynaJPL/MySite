@@ -20,34 +20,35 @@
     </div>
   </div>
   <div class="row h-100" *ngIf="isProjectChoosed">
-    <div class="col-5">
+    <div class="col-5 h-100 d-flex flex-column justify-content-center align-items-center">
       <img src="{{projects[whichProjchoosen-1].image}}" class="projImage" />
     </div>
-    <div class="col-7">
+    <div class="col-7 h-100 d-flex flex-column justify-content-center align-items-center">
       <h1>{{projects[whichProjchoosen-1].name}}</h1>
-      <p>{{projects[whichProjchoosen-1].description}}</p>
-      <a href="{{projects[whichProjchoosen-1].link}}">Zobacz projekt</a>
+      <p class="desc">{{projects[whichProjchoosen-1].description}}</p>
+      <a href="{{projects[whichProjchoosen-1].link}}">
+        <i class="fas fa-external-link-alt">
+          Zobacz projekt
+        </i>
+      </a>
       <div>
-        <h2>Zadania do wykonania:</h2>
-        <p *ngIf='projects[whichProjchoosen-1].whattodo1bool'><i class="fas fa-tasks fa-2x" attr.style = "color: {{projects[whichProjchoosen-1].whattodo1issuecolor}}"></i> {{projects[whichProjchoosen-1].whattodo1}}</p>
-        <p *ngIf='projects[whichProjchoosen-1].whattodo2bool'><i class="fas fa-tasks fa-2x" attr.style = "color: {{projects[whichProjchoosen-1].whattodo2issuecolor}}"></i>{{projects[whichProjchoosen-1].whattodo2}}</p>
-        <p *ngIf='projects[whichProjchoosen-1].whattodo3bool'><i class="fas fa-tasks fa-2x" attr.style = "color: {{projects[whichProjchoosen-1].whattodo3issuecolor}}"></i>{{projects[whichProjchoosen-1].whattodo3}}</p>
-        <p *ngIf='projects[whichProjchoosen-1].whattodo4bool'><i class="fas fa-tasks fa-2x" attr.style = "color: {{projects[whichProjchoosen-1].whattodo4issuecolor}}"></i>{{projects[whichProjchoosen-1].whattodo4}}</p>
+        <h2>Co jeszcze do zrobienia?</h2>
+        <p *ngIf='projects[whichProjchoosen-1].whattodo1bool'><i class="fas fa-tasks fa-2x" attr.style="color: {{projects[whichProjchoosen-1].whattodo1issuecolor}}"></i> {{projects[whichProjchoosen-1].whattodo1}}</p>
+        <p *ngIf='projects[whichProjchoosen-1].whattodo2bool'><i class="fas fa-tasks fa-2x" attr.style="color: {{projects[whichProjchoosen-1].whattodo2issuecolor}}"></i>{{projects[whichProjchoosen-1].whattodo2}}</p>
+        <p *ngIf='projects[whichProjchoosen-1].whattodo3bool'><i class="fas fa-tasks fa-2x" attr.style="color: {{projects[whichProjchoosen-1].whattodo3issuecolor}}"></i>{{projects[whichProjchoosen-1].whattodo3}}</p>
+        <p *ngIf='projects[whichProjchoosen-1].whattodo4bool'><i class="fas fa-tasks fa-2x" attr.style="color: {{projects[whichProjchoosen-1].whattodo4issuecolor}}"></i>{{projects[whichProjchoosen-1].whattodo4}}</p>
+      </div>
+      <div class="col-12 d-flex flex-row justify-content-center align-items-center" *ngIf='projects[whichProjchoosen-1].isfin == true'>
+        <i class="fas fa-check fa-2x"></i>
+        <h2 class="h2done">ZADANIE WYKONANE</h2>
       </div>
     </div>
-    <div class="col-12">
-      <div class="progress" style="height: 20px;">
-        <div class="progress-bar" role="progressbar" attr.style="width: {{projects[whichProjchoosen-1].progress}};" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-          {{projects[whichProjchoosen-1].progress}}
-        </div>
-      </div>
-      <h2 *ngIf='projects[whichProjchoosen-1].isfin == true'>ZADANIE WYKONANE</h2>
+    <div class="col-12 d-flex justify-content-evenly align-items-center">
+      <button type="button" class="btn btn-warning btn-lg" (click)="letsgoback()">
+        Wróć do projektów
+      </button>
+      <button type="button" class="btn btn-danger btn-lg" routerLink="/"> Powrót na stronę główna
+      </button>
     </div>
-    <div class="col-12 h-100 d-flex flex-row justify-content-evenly align-items-center">
-      <button type="button" class="btn btn-warning btn-lg" (click) = "letsgoback()"> Wróć do projektów</button>
-      <button type ="button" class="btn btn-danger btn-lg" routerLink = "/"> Powrót na stronę główna </button>
-      
-    </div>
-
   </div>
 </div>
