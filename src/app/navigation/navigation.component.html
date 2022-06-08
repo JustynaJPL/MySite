@@ -1,14 +1,23 @@
-<div class="bar"></div>
-<div class="navigation w-100 d-flex flex-row justify-content-center align-items-center">
-  <ul class="list-group list-group-horizontal d-flex justify-content-center align-items-center">
-    <li><button class="btn btn-primary about">O mnie</button></li>
-    <li><button class="btn btn-primary projects">Projekty</button></li>
-    <li><button class="btn btn-primary contact">Kontakt</button></li>
-  </ul>
-  <a href="" class="justify-content-end inline">
-    <i class="flag flag-poland"></i>
-  </a>
-  <a href="" class="justify-content-end inline">
-    <i class="flag flag-uk"></i>
-  </a>
+<div class="fixed-top">
+  <div class="bar"></div>
+  <div class="navigation w-100 d-flex flex-row justify-content-center align-items-center">
+    <a href="/about" class="logo">Justyna Stobiecka</a>
+    <ul class="list-group list-group-horizontal d-flex justify-content-end align-items-center">
+      <li [ngClass] = "{'activenavlink': this.router.url==='/about'}">
+        <a href="/about" >O mnie</a>
+      </li>
+      <li [ngClass] = "{'activenavlink': this.router.url==='/show-projects'}">
+        <a href="/show-projects" >Projekty</a>
+      </li>
+      <li [ngClass] = "{'activenavlink': this.router.url==='/about#contacts'}">
+        <a href="#contacts" >Kontakt</a>
+      </li>
+    </ul>
+    <a href="" class="justify-content-end inline">
+      <i class="flag flag-poland"></i>
+    </a>
+    <a href="" class="justify-content-end inline">
+      <i class="flag flag-uk"></i>
+    </a>
+  </div>
 </div>

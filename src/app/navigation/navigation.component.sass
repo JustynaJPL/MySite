@@ -1,25 +1,32 @@
 @import '../material-design-theme-amber-tile.sass'
 
-// $primaryColor: #ffc400
-// $primaryLightColor: #fff64f
-// $primaryDarkColor: #c79400
-// $secondaryColor: #00685b
-// $secondaryLightColor: #439688
-// $secondaryDarkColor: #003d32
-// $primaryTextColor: #000000
-// $secondaryTextColor: #EEEEEE
-// $backgroundColorDarker: #E1E2E1FF
-// $backgroundColorLighter: #F5F5F6FF
+
+.logo
+	font-family: 'Fasthand', cursive
+	color: $secondaryTextColor
+	font-size: 25px
+
+.navigation
+	opacity: 80%
 
 
 ul
-	width: 80%
+	width: 60%
 	list-style-type: none
+	li
+		width: 150px
+		// height: 50px
+		padding: 10px
+		margin: 10px
+		font-size: 20px
+		color: $secondaryTextColor
+		border-radius: 5px
+		text-align: center
 
-.btn
-	margin: 20px 50px
-	background-color: $secondaryLightColor
-	border-color: $secondaryLightColor
+a
+	text-decoration: none
+	font-weight: bold
+	color: $secondaryTextColor
 
 .bar
 	width: 100%
@@ -28,3 +35,7 @@ ul
 
 .navigation
 	background-color: $primaryColor
+
+.activenavlink
+	background-color: $primaryDarkColor
+
